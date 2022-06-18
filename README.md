@@ -6,4 +6,4 @@ All my problem solvings from hackerrank, leetcode and other websites.
 |------------|---|-----|----|--------|-----|-------|
 | HackerRank | ✓ | ✓   |    | ✓      | ✓   | ✓     |
 | LeetCode   | ✓ | ✓   | ✓  | ✓      | ✓   |       |
-| SoloLearn  | ✓ |     | ✓  | ✓      |     |       |
+| SoloLearn  | ✓ |     |   | ✓      |     |       |
