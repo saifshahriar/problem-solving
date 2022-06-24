@@ -1,2 +1,2 @@
-OS: Arch_Linux_x86_64
-Package Manager: Pacman, Yay(AUR)
+# OS: 			Arch_Linux_x86_64
+# Package: 		Yay(AUR)
