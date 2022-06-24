@@ -2,7 +2,7 @@
 
 int main() {
     int a, b;
-    char* g[9] = {"one", "two", "three", "four", "five", "six", "seven", "eight","nine",};
+    char* g[9] = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
     scanf("%d\n%d", &a, &b);
     
