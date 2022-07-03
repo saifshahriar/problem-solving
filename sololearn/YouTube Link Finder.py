@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 # Take User input
 link = input()
 
@@ -30,4 +31,3 @@ else:
 # RRW2aUSw5vU
 #
 # Note that the input can be in two different formats.
-
