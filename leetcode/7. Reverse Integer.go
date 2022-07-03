@@ -13,9 +13,9 @@ func reverse(x int) int {
 		return -2143847412
 	} else if x <= -1563847412 && -reversedInt(x) != 0 || x >= 1534236469 {
 		return 0
-    } else if x <= -1563847412 && -reversedInt(x) == 0 {
+	} else if x <= -1563847412 && -reversedInt(x) == 0 {
 		return -reversedInt(x)
-	} else if x < 0 && x > -1563847412 { 
+	} else if x < 0 && x > -1563847412 {
 		return -reversedInt(-x)
 	} else {
 		return reversedInt(x)

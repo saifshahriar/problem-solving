@@ -15,7 +15,7 @@ int main() {
 }
 
 /* Problem Link: https://www.sololearn.com/coach/3?ref=app
- 
+
 * Problem:
 
 You have a box of popsicles and you want to give them all away to a group of brothers and sisters. If you have enough left in the box to give them each an even amount you should go for it! If not, they will fight over them, and you should eat them yourself later.

@@ -5,9 +5,9 @@ read -r y
 read -r z
 
 if [ $x -eq $y ] && [ $y -eq $z ]; then
-    echo "EQUILATERAL"
+	echo "EQUILATERAL"
 elif [ $x -eq $y ] || [ $y -eq $z ] || [ $z -eq $y ]; then
-    echo "ISOSCELES"
+	echo "ISOSCELES"
 else
-    echo "SCALENE"
+	echo "SCALENE"
 fi

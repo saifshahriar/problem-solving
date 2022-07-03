@@ -4,14 +4,14 @@ link = input()
 
 # type_1:
 if "=" in link:
-    extracted_id = link.split("=")
-    print(extracted_id[1])
+	extracted_id = link.split("=")
+	print(extracted_id[1])
 # type_2
 else:
-    extracted_id = link.split("/")
-    print(extracted_id[3])
+	extracted_id = link.split("/")
+	print(extracted_id[3])
 
-# You and your friends like to share YouTube links all throughout the day. You want to keep track of all the videos you watch in your own personal notepad, but you find that keeping the entire link is unnecessary. 
+# You and your friends like to share YouTube links all throughout the day. You want to keep track of all the videos you watch in your own personal notepad, but you find that keeping the entire link is unnecessary.
 # Keep the video ID (the combination of letters and numbers at the end of the link) in your notepad to slim down the URL.
 #
 # Task:

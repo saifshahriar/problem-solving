@@ -3,6 +3,6 @@
 local t = tonumber(io.read())
 
 for _ = 1, t do
-    local a, b = io.read("*number", "*number")
-    print(a + b)
+	local a, b = io.read("*number", "*number")
+	print(a + b)
 end
