@@ -15,12 +15,9 @@ function timeConversion(s)
 	end
 end
 
-local fptr = io.open(os.getenv("OUTPUT_PATH"), "w")
-
-local s = io.stdin:read("*l")
-
+local fptr   = io.open(os.getenv("OUTPUT_PATH"), "w")
+local s      = io.stdin:read("*l")
 local result = timeConversion(s)
 
 fptr:write(result, "\n")
-
 fptr:close()

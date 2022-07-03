@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 int maxOfFour(int a, int b, int c, int d) {
-	if(a>b && a>c && a>d) {
+	if(a>b && a>c && a>d)
 		return (a);
-	} else if (b>a && b>c && b>d) {
+	else if (b>a && b>c && b>d)
 		return (b);
-	} else if (c>a && c>b && c>d) {
+	else if (c>a && c>b && c>d)
 		return (c);
-	} else {
+	else
 		return d;
-	}
 }
 
 int main() {

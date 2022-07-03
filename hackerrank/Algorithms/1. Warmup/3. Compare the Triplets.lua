@@ -13,8 +13,7 @@ function compareTriplets(a, b)
 end
 
 local fptr = io.open(os.getenv("OUTPUT_PATH"), "w")
-
-local a = {}
+local a    = {}
 
 for token in string.gmatch(io.stdin:read("*l"):gsub("%s+$", ""), "[^%s]+") do
 	table.insert(a, tonumber(token))
@@ -29,7 +28,5 @@ end
 local result = compareTriplets(a, b)
 
 fptr:write(table.concat(result, " "))
-
 fptr:write("\n")
-
 fptr:close()

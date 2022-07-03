@@ -7,8 +7,8 @@ int main() {
 	scanf("%d %d\n", &intNum1, &intNum2);
 	scanf("%f %f\n", &floatNum1, &floatNum2);
 
-	intSum = intNum1 + intNum2;
-	intDif = intNum1 - intNum2;
+	intSum   = intNum1 + intNum2;
+	intDif   = intNum1 - intNum2;
 	floatSum = floatNum1 + floatNum2;
 	floatDif = floatNum1 - floatNum2;
 
