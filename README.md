@@ -5,7 +5,7 @@ All my problem solvings from hackerrank, leetcode and other websites.
 | Platform   | C | C++ | Go | Lua | Python | Rust | SQL | Shell |
 |------------|---|-----|----|-----|--------|------|-----|-------|
 | CodeForces | ✓ | ✓   |    |     |        | ✓    |     |       |
-| CodeChef   | ✓ |     |    |  ✓  |        |      |     |       |
+| CodeChef   | ✓ | ✓   |    |  ✓  |        |      |     |       |
 | HackerRank | ✓ | ✓   |    |     | ✓      |      | ✓   | ✓     |
 | LeetCode   | ✓ | ✓   | ✓  |     | ✓      |      | ✓   |       |
 | SoloLearn  | ✓ |     |  ✓ |     | ✓      |      |     |       |
