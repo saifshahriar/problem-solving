@@ -1,0 +1,1 @@
+/home/saif/Users/cp/problem-solving/BUBT/CSE101_SPL/week_1/../../../beecrowd/1000_hello_world.c
