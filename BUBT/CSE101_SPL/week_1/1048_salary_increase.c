@@ -1,1 +1,0 @@
-/home/saif/Users/cp/problem-solving/BUBT/CSE101_SPL/week_1/../../../beecrowd/1048_salary_increase.c

@@ -1,1 +1,0 @@
-/home/saif/Users/cp/problem-solving/BUBT/CSE101_SPL/week_1/../../../beecrowd/2763_cpf_input_and_output.c
