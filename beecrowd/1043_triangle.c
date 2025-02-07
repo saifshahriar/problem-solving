@@ -9,5 +9,5 @@ int main() {
 	else
 		printf("Area = %.1f", (a + b) * c / 2);
 	printf("\n");
-    return 0;
+	return 0;
 }

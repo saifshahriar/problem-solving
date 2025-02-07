@@ -7,5 +7,5 @@ int main() {
 
 	double total_salary = fixed_salary + sales_total * 0.15;
 	printf("TOTAL = R$ %0.2lf\n", total_salary);
-    return 0;
+	return 0;
 }

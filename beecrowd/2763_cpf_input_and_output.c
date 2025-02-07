@@ -8,5 +8,5 @@ int main() {
 	printf("%s\n", y);
 	printf("%s\n", z);
 	printf("%s\n", d);
-    return 0;
+	return 0;
 }

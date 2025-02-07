@@ -20,5 +20,5 @@ int main() {
 	printf("Novo salario: %0.2f\n", new_sal);
 	printf("Reajuste ganho: %0.2f\n", new_sal - sal);
 	printf("Em percentual: %d %%\n", (int)perc);
-    return 0;
+	return 0;
 }

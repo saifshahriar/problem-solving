@@ -1,11 +1,9 @@
-// presentation error
-
 #include <stdio.h>
 
 int main() {
 	char *output[] = {
 		"---------------------------------------",
-		"| decimal   |  octal  |  Hexadecimal  |",
+		"|  decimal  |  octal  |  Hexadecimal  |",
 		"---------------------------------------",
 		"|      0    |    0    |       0       |",
 		"|      1    |    1    |       1       |",
@@ -30,5 +28,5 @@ int main() {
 	for (int i = 0; i < size; ++i)
 		printf("%s\n", output[i]);
 
-    return 0;
+	return 0;
 }

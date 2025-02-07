@@ -14,5 +14,5 @@ int main() {
 	printf("%0.3lf - %0.3lf\n", a, b);
 	printf("%0.3lf - %0.3lf\n", a, b);
 
-    return 0;
+	return 0;
 }

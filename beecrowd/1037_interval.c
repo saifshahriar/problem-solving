@@ -20,5 +20,5 @@ int main() {
 	else if (n <= 100)
 		printf("(75,100]");
 	printf("\n");
-    return 0;
+	return 0;
 }

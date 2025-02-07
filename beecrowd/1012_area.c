@@ -17,5 +17,5 @@ int main() {
 	printf("TRAPEZIO: %0.3lf\n", trapezio);
 	printf("QUADRADO: %0.3lf\n", quadrado);
 	printf("RETANGULO: %0.3lf\n", retangulo);
-    return 0;
+	return 0;
 }

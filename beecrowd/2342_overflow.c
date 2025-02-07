@@ -7,5 +7,5 @@ int main() {
 	printf(o == '+' && a + b <= n
 		|| o == '*' && a * b <= n
 		? "OK\n" : "OVERFLOW\n");
-    return 0;
+	return 0;
 }

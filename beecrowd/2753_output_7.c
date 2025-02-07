@@ -3,5 +3,5 @@
 int main() {
 	for (char chr = 'a'; chr <= 'z'; ++chr)
 		printf("%d e %c\n", chr, chr);
-    return 0;
+	return 0;
 }
