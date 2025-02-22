@@ -13,53 +13,31 @@
 using namespace std;
 #define el "\n"
 mt19937 rnd(chrono::steady_clock::now().time_since_epoch().count());
-
 /// }}}
 
-/// #define HAS_TESTCASES
+#define HAS_TESTCASES
 
 int sol() {
-	int              n;
-	map<string, int> data;
-	string           s;
-	cin >> n;
-
-	while (n--) {
-		cin >> s;
-		if (data.count(s) == 0) {
-			cout << "OK";
-			data[s] = 1;
-		} else {
-			cout << s << data[s];
-			data[s]++;
-		}
-		cout << el;
-	}
+	string a, b;
+	cin >> a >> b;
+	swap(a[0], b[0]);
+	cout << a << " " << b << el;
 	return 0;
 }
 
 // {{{
+// clang-format off
 int32_t main() {
-	InTheNameofAllah
+	InTheNameofAllah;
 	/* int testcases = 1e9; */
 	int testcases = 1;
-#ifdef HAS_TESTCASES
+	#ifdef HAS_TESTCASES
 	cin >> testcases;
-#endif
+	#endif
 	for (int i = 1; i <= testcases; ++i) {
-#ifdef ONPC
-		cout << i << ": ";
-#endif
 		if (sol())
 			break;
-#ifdef ONPC
-		cout << "__________________________" << el;
-#endif
 	}
-#ifdef ONPC
-	cerr << el << "took " << clock() * 1.0 / CLOCKS_PER_SEC << " sec" << el;
-#endif
 }
-
 // vim: foldmethod=marker
 // }}}

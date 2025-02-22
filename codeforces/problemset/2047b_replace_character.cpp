@@ -2,7 +2,9 @@
  * Author: Saif Shahriar
  */
 
-#define InTheNameofAllah ios::sync_with_stdio(0), cin.tie(0);
+#define InTheNameofAllah     \
+	ios::sync_with_stdio(0); \
+	cin.tie(0);
 /// {{{
 #ifdef ONPC
 	#define _GLIBCXX_DEBUG
@@ -13,28 +15,38 @@
 using namespace std;
 #define el "\n"
 mt19937 rnd(chrono::steady_clock::now().time_since_epoch().count());
-
 /// }}}
 
-/// #define HAS_TESTCASES
+#define HAS_TESTCASES
 
 int sol() {
-	int              n;
-	map<string, int> data;
-	string           s;
+	int n;
 	cin >> n;
+	string s;
+	cin >> s;
 
-	while (n--) {
-		cin >> s;
-		if (data.count(s) == 0) {
-			cout << "OK";
-			data[s] = 1;
-		} else {
-			cout << s << data[s];
-			data[s]++;
-		}
-		cout << el;
+	map<char, int> mp;
+	for (auto e : s)
+		mp[e]++;
+
+	int  maxn = 0, minn = 11;
+	char maxc, minc;
+
+	for (auto e : mp) {
+		if (e.second >= maxn)
+			maxn = e.second, maxc = e.first;
+		if (e.second < minn)
+			minn = e.second, minc = e.first;
 	}
+
+	int flag = 0;
+	for (int i = 0; i < n; ++i)
+		if (s[i] == minc && flag == 0) {
+			cout << maxc;
+			flag = 1;
+		} else
+			cout << s[i];
+	cout << el;
 	return 0;
 }
 

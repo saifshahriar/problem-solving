@@ -13,28 +13,14 @@
 using namespace std;
 #define el "\n"
 mt19937 rnd(chrono::steady_clock::now().time_since_epoch().count());
-
 /// }}}
 
-/// #define HAS_TESTCASES
+#define HAS_TESTCASES
 
 int sol() {
-	int              n;
-	map<string, int> data;
-	string           s;
-	cin >> n;
-
-	while (n--) {
-		cin >> s;
-		if (data.count(s) == 0) {
-			cout << "OK";
-			data[s] = 1;
-		} else {
-			cout << s << data[s];
-			data[s]++;
-		}
-		cout << el;
-	}
+	int a, b;
+	cin >> a >> b;
+	cout << (a % b == 0 ? 0 : b - a % b) << el;
 	return 0;
 }
 
