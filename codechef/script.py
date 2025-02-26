@@ -13,14 +13,14 @@ for i in rm:
 for i in os.listdir():
     j = i.split(".")
 
-    if len(j) != 2 or i == 'script.py':
+    if len(j) != 2 or i == "script.py":
         continue
 
     match j[1]:
-        case 'c':
+        case "c":
             comment_opening = "/* "
             comment_closing = " */"
-        case 'lua':
+        case "lua":
             comment_opening = "-- "
             comment_closing = ""
         case _:
@@ -28,12 +28,12 @@ for i in os.listdir():
             comment_closing = ""
 
     # First open in reading mode to see if the comment has already added or not
-    f = open(i, 'r')
+    f = open(i, "r")
     if comment_opening in f.readlines()[-1]:
         f.close()
         continue
     f.close()
 
-    f = open(i, 'a')
+    f = open(i, "a")
     f.write("\n{}{}{}{}".format(comment_opening, rootlink, j[0], comment_closing))
     f.close()
