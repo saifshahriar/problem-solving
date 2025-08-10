@@ -5,10 +5,10 @@ using namespace std;
 template <typename T> class Stack {
 	int size;
 	T*  st;
-	int lidx;
+	int tos;
 
 public:
-	Stack(int sz) : size(sz), lidx(0) {
+	Stack(int sz) : size(sz), tos(0) {
 		st = new T[size];
 	}
 
@@ -17,21 +17,21 @@ public:
 	}
 
 	void push(T e) {
-		if (lidx == size) {
+		if (tos == size) {
 			cout << "Stack is full!" << endl;
 			return;
 		}
-		st[lidx] = e;
-		lidx++;
+		st[tos] = e;
+		tos++;
 	}
 
 	T pop() {
-		if (lidx == 0) {
+		if (tos == 0) {
 			cout << "Stack is empty!" << endl;
 			return -1;
 		}
-		lidx--;
-		return st[lidx];
+		tos--;
+		return st[tos];
 	}
 
 	T* begin() {
@@ -39,7 +39,7 @@ public:
 	}
 
 	T* end() {
-		return st + lidx;
+		return st + tos;
 	}
 };
 
