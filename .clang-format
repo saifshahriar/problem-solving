@@ -78,7 +78,7 @@ BreakFunctionDefinitionParameters: false
 BreakInheritanceList: AfterColon
 BreakStringLiterals: true
 BreakTemplateDeclarations: No
-ColumnLimit: 80
+ColumnLimit: 73
 CommentPragmas: '^ IWYU pragma:'
 CompactNamespaces: false
 ConstructorInitializerIndentWidth: 4
@@ -740,9 +740,9 @@ IncludeCategories:
   - Regex: '.*'
     Priority: 1
 IncludeIsMainRegex: '(Test)?$'
-IndentAccessModifiers: true
+IndentAccessModifiers: false
 IndentCaseBlocks: true
-IndentCaseLabels: true
+IndentCaseLabels: false
 IndentGotoLabels: false
 IndentPPDirectives: BeforeHash
 IndentRequiresClause: false
@@ -801,7 +801,7 @@ SpacesInContainerLiterals: false
 SpacesInCStyleCastParentheses: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
-Standard: Cpp03
+Standard: c++11
 StatementMacros:
   - InTheNameofAllah
 TabWidth: 4
