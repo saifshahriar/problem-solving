@@ -9,7 +9,7 @@
 using namespace std;
 
 long long kadane(int n, vector<int>& v) {
-	int currsum = 0, maxsum = LLONG_MIN;
+	long long currsum = 0, maxsum = LLONG_MIN;
 	for (int i = 0; i < n; ++i) {
 		currsum = v[i];
 		maxsum  = max(maxsum, currsum);
