@@ -3,6 +3,9 @@
  *
  * general idea: iterate and find current sum, if current sum is
  * negative, make it 0. find the maximum sum.
+ *
+ * keywords: contiguous subarray, maximum subarray sum, sum of subarray
+ * see also: prefix-sum
  */
 
 #include <bits/stdc++.h>
