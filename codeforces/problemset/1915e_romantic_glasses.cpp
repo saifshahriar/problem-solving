@@ -161,23 +161,19 @@ long long mod_inv(long long a, long long m = MOD) { return mod_pow(a, m - 2, m);
 
 #define HAS_TESTCASES
 
-/* #define PRINTCASES */
-
-int isprime(ll x) {
-	if (x < 2)
-		return 0;
-
-	for (ll i = 2; i * i <= x; i++)
-		if (x % i == 0)
-			return 0;
-	return 1;
-}
-
 void sol() {
 	ll n;
 	cin >> n;
-	ll r = sqrtl(n);
-	(r * r == n && isprime(r)) ? YES : NO;
+
+	vector<ll> v(n);
+	for (auto& e : v)
+		cin >> e;
+
+	vector<ll> ps(n + 1, 0);
+	for (ll i = 1; i <= n; ++i)
+		ps[i] = v[i - 1] * pow(-1, i) + ps[i - 1];
+
+	len(ps) != len(ps | uniq) ? YES : NO;
 }
 
 /// {{{ Main
