@@ -14,8 +14,8 @@ using namespace std;
 long long kadane(int n, vector<int>& v) {
 	long long currsum = 0, maxsum = LLONG_MIN;
 	for (int i = 0; i < n; ++i) {
-		currsum = v[i];
-		maxsum  = max(maxsum, currsum);
+		currsum += v[i];
+		maxsum   = max(maxsum, currsum);
 		if (currsum < 0)
 			currsum = 0;
 	}
