@@ -1,6 +1,7 @@
 # vim
 *.exrc
 testcases/
+tmp.*
 
 
 # Prerequisites
