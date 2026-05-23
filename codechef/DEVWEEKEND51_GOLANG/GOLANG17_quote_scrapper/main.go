@@ -62,7 +62,7 @@ func buildStartingURL(tag string) string {
 	// TODO 1: Check if the 'tag' string is empty.
 	if tag != "" {
 		// If it contains a tag value, construct and return the specific tag URL route starting from page 1.
-		return baseURL + "tag/" + tag + "/page/1/"
+		return baseURL + "/tag/" + tag + "/page/1/"
 	}
 
 	// If it is empty, construct and return the URL to scrape all pages starting from page 1.
@@ -153,7 +153,7 @@ func getNextPageURL(doc *goquery.Document) string {
 
 	// TODO 14: Check if the attribute exists. If it does not exist, return an empty string. Otherwise, return the extracted target link.
 	if exists {
-		return baseURL + href
+		return href
 	}
 
 	return ""
@@ -198,7 +198,7 @@ func scrapeAllPages(startURL string) ([]Quote, error) {
 		}
 
 		// TODO 21: Construct the absolute URL path combination by combining the primary base address string with the discovered route path stub.
-		currentURL = nextPageUrl
+		currentURL = baseURL + nextPageUrl
 
 		// TODO 22: Introduce a brief pause delay of 500 milliseconds before starting the next page request cycle.
 		time.Sleep(500 * time.Millisecond)
